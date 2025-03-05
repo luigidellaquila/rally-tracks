@@ -15,15 +15,18 @@
     {
       "name": "from_idx_limit_1000",
       "operation-type": "esql",
-      "query": "FROM idx_* | limit 1000"
+      "query": "FROM idx_* | limit 1000",
+      "body": { "pragma": { "max_concurrent_nodes_per_cluster": 3 } }
     },
     {
       "name": "from_idx_limit_10000",
       "operation-type": "esql",
-      "query": "FROM idx_* | limit 10000"
+      "query": "FROM idx_* | limit 10000",
+      "body": { "pragma": { "max_concurrent_nodes_per_cluster": 3 } }
     },
     {
-    "name": "from_idx_limit_1",
-    "operation-type": "esql",
-    "query": "FROM idx_* | limit 1"
+      "name": "from_idx_limit_1",
+      "operation-type": "esql",
+      "query": "FROM idx_* | limit 1",
+      "body": { "pragma": { "max_concurrent_nodes_per_cluster": 3 } }
     }
